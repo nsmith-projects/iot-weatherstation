@@ -8,7 +8,7 @@ The python script loops on our Jetson Nano periodically taking snapshots of the 
 JSON payload to AWS IoT. The photo was sent to an AWS S3 bucket. The webserver subscribes to our weatherstation topic to pull down that payload and parse the data for display on a simple web page.
 
 Hardware used: nvidia Jetson Nano, BME280 Sensors, Camera, PC running the node webserver.
-Software libraries used: Adafruit BME280, OpenCV, nanocamera, awsIot, express.
+Software libraries used: Adafruit BME280, OpenCV, nanocamera, awsIot, express, handlebars.
 
 NOTE: Including your AWS certs and keys in your project files and in plain text should never be done! It was only done here for this school project as a means to an end, without
 security being a thought. Amazon AWS offers their own technology that can be leveraged to avoid this, and is something that should be implemented.
