@@ -1,0 +1,23 @@
+.weather {
+  background-image: url('http://localhost:5000/sunnyclouds.jpg');
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+}
+
+.weather:after {
+  background: #000;
+  content: '';
+  height: 100%;
+  mix-blend-mode: multiply;
+  opacity: .5;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.weather .container {
+  z-index: 2;
+  position: relative;
+}
