@@ -11,8 +11,8 @@ from botocore.exceptions import NoCredentialsError
 from datetime import date, datetime
 from AWSIoTPythonSDK.MQTTLib import AWSIoTMQTTClient
 
-ACCESS_KEY = 'AKIAJFCLOCFVYKB534IQ'
-SECRET_KEY = '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'
+ACCESS_KEY = ''
+SECRET_KEY = ''
 
 def upload_to_aws(local_file, bucket, s3_file):
     s3 = boto3.client('s3', aws_access_key_id=ACCESS_KEY,
